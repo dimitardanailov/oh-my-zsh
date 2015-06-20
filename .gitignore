@@ -7,3 +7,11 @@ custom
 *.swp
 !custom/example.zshcache
 cache/
+
+# Mac os x files
+.DS_Store
+
+# Temp vim files
+*~
+*.*~
+*.swo
