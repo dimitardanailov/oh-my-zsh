@@ -67,6 +67,8 @@ if which tmux 2>&1 >/dev/null; then
   fi
 fi
 
+export EDITOR='vim'
+
 export HOME_FOLDER="/Users/i"
 
 export PATH="$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
