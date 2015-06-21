@@ -59,6 +59,14 @@ plugins=(git npm)
 # Repo: https://github.com/rupa/z
 . `brew --prefix`/etc/profile.d/z.sh
 
+# Always work in a tmux session if tmux is installed
+# https://github.com/chrishunt/dot-files/blob/master/.zshrc
+if which tmux 2>&1 >/dev/null; then
+  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t hack || tmux new -s hack; exit
+  fi
+fi
+
 export HOME_FOLDER="/Users/i"
 
 export PATH="$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
