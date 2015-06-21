@@ -67,6 +67,9 @@ if which tmux 2>&1 >/dev/null; then
   fi
 fi
 
+# https://github.com/tmuxinator/tmuxinator
+source ~/.bin/tmuxinator.zsh
+
 export EDITOR='vim'
 
 export HOME_FOLDER="/Users/i"
