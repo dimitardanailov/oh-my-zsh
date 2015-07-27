@@ -5,8 +5,8 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-ZSH_THEME="random"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="random"
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm)
+plugins=(git npm ssh-agent)
 
 # User configuration
 
@@ -72,9 +72,6 @@ source ~/.bin/tmuxinator.zsh
 
 export EDITOR='vim'
 
-export HOME_FOLDER="/Users/i"
-
-export PATH="$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -93,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -105,50 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ####### BASH PROFILE #######
+export HOME_FOLDER="/Users/i"
 
-export PATH=/usr/local/bin:$PATH
+export PATH="$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
 
-export NVM_DIR="$HOME_FOLDER/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-export PATH="/usr/local/mysql/bin:$PATH"
-
-export SVN_EDITOR=vim
-
-# Google Cloud SDK 
-# Installation with ZSH
-# The next line updates PATH for the Google Cloud SDK.
-source $HOME_FOLDER/google-cloud-sdk/path.zsh.inc
-# The next line enables bash completion for gcloud.
-source "$HOME_FOLDER/google-cloud-sdk/completion.zsh.inc"
-
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-
-# https://wiki.mozilla.org/Mobile/Fennec/Android
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
-# http://stackoverflow.com/questions/10969753/android-command-not-found
-export ANDROID_HOME=$HOME_FOLDER/Android\ SDK:$ANDROID_HOME
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
-
-# http://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
-export PATH=/usr/local/php5/bin:$PATH
-
-# http://stackoverflow.com/questions/10557507/rails-mysql-on-osx-library-not-loaded-libmysqlclient-18-dylib
-MYSQL=/usr/local/mysql/bin
-export PATH=$PATH:$MYSQL
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-
-# Please install qt via: brew install qt5 (http://brewformulas.org/Qt5)
-export CXXFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
-export QTDIR="/usr/local/opt/qt5"
-export PATH="$QTDIR/bin/:$PATH"
-export QTLIB="/usr/local/opt/qt5/include"
-export POPPLER_QT5_CFLAGS="-I$QTLIB"
-export POPPLER_QT5_CXXFLAGS="-I$QTLIB"
-export POPPLER_QT5_LIBS="-F/usr/local/opt/qt5/lib -lz -framework QtXml -framework QtWidgets -framework QtGui -framework QtCore"
-export POPPLER_QT5_TEST_CFLAGS="-I$QTLIB"
-export POPPLER_QT5_TEST_LIBS="-F/usr/local/opt/qt5/lib -lz -framework QtTest -framework QtCore -framework QtXml -framework QtWidgets -framework QtGui -framework QtCore"
+source ~/.bash_profile
