@@ -104,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 ####### BASH PROFILE #######
 export HOME_FOLDER="/Users/i"
 
-<<<<<<< HEAD
 export PATH=$PATH:"$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
 
 source ~/.bash_profile
@@ -119,8 +118,3 @@ if [ -f /Users/i/.tnsrc ]; then
     source /Users/i/.tnsrc 
 fi
 ###-tns-completion-end-###
-=======
-export PATH="$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
-
-source ~/.bash_profile
->>>>>>> 45c61333bc16c2dd49efe3b30a1edc59c2b2a7f9
