@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ####### BASH PROFILE #######
-export HOME_FOLDER="/Users/i"
+export HOME_FOLDER="/Users/user"
 
 export PATH=$PATH:"$HOME_FOLDER/.rvm/gems/ruby-2.1.5/bin:$HOME_FOLDER/.rvm/gems/ruby-2.1.5@global/bin:$HOME_FOLDER/.rvm/rubies/ruby-2.1.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME_FOLDER/.rvm/bin"
 
@@ -110,11 +110,11 @@ source ~/.bash_profile
 source ~/.bashrc
 source ~/.profile
 
-export NVM_DIR="/Users/i/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 ###-tns-completion-start-###
 if [ -f /Users/i/.tnsrc ]; then 
     source /Users/i/.tnsrc 
 fi
+
+export NVM_DIR="/Users/$USER/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ###-tns-completion-end-###
