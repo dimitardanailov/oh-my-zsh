@@ -133,7 +133,15 @@ The default location is `~/.oh-my-zsh` (hidden in your home directory)
 If you'd like to change the install directory with the `ZSH` environment variable, either by running `export ZSH=/your/path` before installing, or by setting it before the end of the install pipeline like this:
 
 ```shell
+<<<<<<< HEAD:README.markdown
+<<<<<<< HEAD
+export ZSH="~/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+=======
+export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+>>>>>>> 5adb06df0efa1ec251d8ef2e6cae2f1ed3e4107d
+=======
 export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+>>>>>>> 7fabc8bca41d4ff7090325116a85513dac852236:README.md
 ```
 
 #### Manual Installation

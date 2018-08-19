@@ -1,5 +1,10 @@
 read -r -p "Are you sure you want to remove Oh My Zsh? [y/N] " confirmation
+<<<<<<< HEAD
+if [ "$confirmation" != y ] && [ "$confirmation" != Y ]
+then
+=======
 if [ "$confirmation" != y ] && [ "$confirmation" != Y ]; then
+>>>>>>> 5adb06df0efa1ec251d8ef2e6cae2f1ed3e4107d
   echo "Uninstall cancelled"
   exit
 fi

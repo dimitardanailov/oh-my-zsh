@@ -5,4 +5,15 @@ custom/
 
 # temp files directories
 cache/
+
+# Mac os x files
+.DS_Store
+
+# Temp vim files
+*~
+*.*~
+*.swo
+
+# Remove tmux logs
+*.log
 log/
